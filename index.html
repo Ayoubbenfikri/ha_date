@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ff5c8a">
+  <title>Hafssa ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="hearts" aria-hidden="true"></div>
+
+  <main class="app">
+    <section id="welcome" class="screen active">
+      <div class="card hero-card">
+        <div class="heart">❤️</div>
+        <p class="eyebrow">Pour Hafssa</p>
+        <h1>Wach mwaf9a tkhreji m3aya a hbibti ?</h1>
+        <p class="sub">J'ai une petite surprise pour toi… 🌹</p>
+        <div class="actions">
+          <button class="btn yes" id="yesBtn">Ah ❤️</button>
+          <button class="btn no" id="noBtn">La 🙈</button>
+        </div>
+        <p class="tiny" id="noHint"></p>
+      </div>
+    </section>
+
+    <section id="planner" class="screen">
+      <div class="card">
+        <div class="step">01 / 03</div>
+        <h2>Alors… on organise notre date ? 😌</h2>
+        <p class="sub">Khtari nhar, sa3a, w chno bghiti naklo.</p>
+
+        <label for="date">📅 Nhar</label>
+        <input id="date" type="date">
+
+        <label for="time">🌙 Sa3a (ghir flil)</label>
+        <select id="time">
+          <option value="">Choisis une heure</option>
+          <option>18:00</option><option>18:30</option><option>19:00</option>
+          <option>19:30</option><option>20:00</option><option>20:30</option>
+          <option>21:00</option><option>21:30</option><option>22:00</option>
+          <option>22:30</option><option>23:00</option>
+        </select>
+
+        <label>🍽️ Chno bghiti naklo ?</label>
+        <div class="food-grid">
+          <button class="food" data-food="🍣 Sushi"><span>🍣</span>Sushi</button>
+          <button class="food" data-food="🍔 Burger"><span>🍔</span>Burger</button>
+          <button class="food" data-food="🌮 Tacos"><span>🌮</span>Tacos</button>
+          <button class="food" data-food="🍕 Pizza"><span>🍕</span>Pizza</button>
+          <button class="food" data-food="🍝 Pasta"><span>🍝</span>Pasta</button>
+          <button class="food" data-food="✨ Surprise"><span>✨</span>Surprise</button>
+        </div>
+
+        <button class="btn next" id="nextBtn">Continuer 💕</button>
+        <p class="error" id="error"></p>
+      </div>
+    </section>
+
+    <section id="final" class="screen">
+      <div class="card final-card">
+        <div class="step">03 / 03</div>
+        <div class="big-heart">💗</div>
+        <h2>Dernière question…</h2>
+        <h1>Wach katbghini o bagha tkamli hyatek m3aya ?</h1>
+        <p class="sub">Réfléchis bien… 😌❤️</p>
+        <div class="actions">
+          <button class="btn yes" id="loveYes">Ah ❤️</button>
+          <button class="btn no" id="loveNo">La 🥺</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="result" class="screen">
+      <div class="card result-card">
+        <div class="big-heart" id="resultIcon">💖</div>
+        <h1 id="resultTitle"></h1>
+        <p id="resultText" class="sub"></p>
+        <button class="btn next" id="whatsappBtn">Envoyer sur WhatsApp 💚</button>
+        <button class="btn no" id="restartBtn">🔄 Bdlt ra2y , bghit n3awd mn jdid</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
