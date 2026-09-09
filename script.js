@@ -2,10 +2,11 @@ const screens = {
   welcome: document.getElementById("welcome"),
   planner: document.getElementById("planner"),
   final: document.getElementById("final"),
+  kiss: document.getElementById("kiss"),
   result: document.getElementById("result")
 };
 
-const data = { date:"", time:"", food:"", loved:"" };
+const data = { date:"", time:"", food:"", loved:"", kiss:"" };
 
 function show(name){
   Object.values(screens).forEach(s=>s.classList.remove("active"));
@@ -62,10 +63,19 @@ document.getElementById("nextBtn").onclick=()=>{
 
 document.getElementById("loveYes").onclick=()=>{
   data.loved = "Ah ❤️";
-  finish();
+  show("kiss");
 };
 document.getElementById("loveNo").onclick=()=>{
   data.loved = "La ";
+  show("kiss");
+};
+
+document.getElementById("kissYes").onclick=()=>{
+  data.kiss = "na3tiha lahbibi 😘";
+  finish();
+};
+document.getElementById("kissNo").onclick=()=>{
+  data.kiss = "la, lah ymaskhak 😂";
   finish();
 };
 
@@ -104,14 +114,17 @@ ach ghadi naklo  : ${data.food}
  “Wach katbghini o bagha tkamli hyatek m3aya ?”
 Réponse : ${loved}
 
-— 🌹`;
+“3tini bousa”
+Réponse : ${data.kiss}
+
+`;
 
   window.open("https://wa.me/212784716998?text="+encodeURIComponent(msg),"_blank");
 };
 
 document.getElementById("restartBtn").onclick=()=>{
   // reset toutes les réponses pour recommencer depuis le début
-  data.date = ""; data.time = ""; data.food = ""; data.loved = "";
+  data.date = ""; data.time = ""; data.food = ""; data.loved = ""; data.kiss = "";
   document.getElementById("date").value = "";
   document.getElementById("time").value = "";
   document.querySelectorAll(".food").forEach(b=>b.classList.remove("selected"));
