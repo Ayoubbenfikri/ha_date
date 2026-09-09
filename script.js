@@ -93,7 +93,7 @@ function finish(){
 document.getElementById("whatsappBtn").onclick=()=>{
   const loved = data.loved === "Ah ❤️" ? "OUI ❤️" : "NON 🥺";
   const msg =
-`❤️ DATE POUR HAFSSA ❤️
+`❤️ first Date ❤️
 
 Réponse pour sortir : OUI ❤️
 
