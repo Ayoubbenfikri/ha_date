@@ -104,7 +104,7 @@ Réponse pour sortir : OUI ❤️
 💗 “Wach katbghini o bagha tkamli hyatek m3aya ?”
 Réponse : ${loved}
 
-— Message envoyé depuis notre petite surprise 🌹`;
+— 🌹`;
 
   window.open("https://wa.me/212784716998?text="+encodeURIComponent(msg),"_blank");
 };
