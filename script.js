@@ -29,9 +29,9 @@ noBtn.onclick = () => {
   noCount++;
   const messages = [
     "Hmmm… la yak , mamragtich , chofi dik ah rah khdama 😏",
-    "malki makathachmi khtari ah 😭❤️",
+    "malki makathachmi khtari ah ",
     "wlah makthachmi😂",
-    "Hafssa, had button ma kaykhdemch mzyan 🙈",
+    "Hafssa, had button ma kaykhdemch mzyan ",
     "Safi safi… daba khassk tgoli Ah ❤️"
   ];
   noHint.textContent = messages[Math.min(noCount-1,messages.length-1)];
@@ -65,7 +65,7 @@ document.getElementById("loveYes").onclick=()=>{
   finish();
 };
 document.getElementById("loveNo").onclick=()=>{
-  data.loved = "La 🥺";
+  data.loved = "La ";
   finish();
 };
 
@@ -83,7 +83,7 @@ function finish(){
     title.textContent="ta ana kanbghik alhbiba dyali , lah ykhalik liya  ❤️";
     text.textContent=`Date: ${formatDate(data.date)} à ${data.time} • ${data.food}`;
   }else{
-    icon.textContent="🥺";
+    icon.textContent="";
     title.textContent="yak al bagra ";
     text.textContent=`Hafssa a choisi “La” pour la dernière question. Mais le date était prévu le ${formatDate(data.date)} à ${data.time}, avec ${data.food}.`;
   }
