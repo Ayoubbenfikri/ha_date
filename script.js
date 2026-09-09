@@ -91,17 +91,17 @@ function finish(){
 }
 
 document.getElementById("whatsappBtn").onclick=()=>{
-  const loved = data.loved === "Ah ❤️" ? "OUI ❤️" : "NON 🥺";
+  const loved = data.loved === "Ah " ? "OUI " : "NON ";
   const msg =
-`❤️ first Date ❤️
+` first Date 
 
-Réponse pour sortir : OUI ❤️
+Réponse pour sortir : OUI 
 
-📅 Jour : ${formatDate(data.date)}
-🌙 Heure : ${data.time}
-🍽️ À manger : ${data.food}
+Jour : ${formatDate(data.date)}
+Heure : ${data.time}
+ach ghadi naklo  : ${data.food}
 
-💗 “Wach katbghini o bagha tkamli hyatek m3aya ?”
+ “Wach katbghini o bagha tkamli hyatek m3aya ?”
 Réponse : ${loved}
 
 — 🌹`;
